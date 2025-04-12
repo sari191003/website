@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Sidebar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="#" onclick="showContent('home')">Home</a></li>
+                <li><a href="#" onclick="showContent('about')">Galeri</a></li>
+                <li><a href="#" onclick="showContent('contact')">Kontak</a></li>
+                
+            </ul>
+        </aside>
+        <main class="content">
+            <section id="home" class="content-section" style="display:block;">
+                <h1>Selamat Hari Raya Idul Fitri.</h1>
+            
+                <p>
+                    "Taqabbalallahu minna wa minkum, shiyamana wa shiyamakum. Selamat Hari Raya Idul Fitri 1446 H! Mohon maaf lahir dan batin. Semoga di hari yang suci ini, hati kita kembali bersih, ikatan keluarga semakin erat, dan kebahagiaan senantiasa menyertai. Dari lubuk hati yang terdalam, Sari dan Family mengucapkan terima kasih atas setiap doa, dukungan, dan kebersamaan. Semoga berkah dan cinta kasih Allah selalu menyelimuti langkah kita semua." 🌙✨
+                </p>
+            
+                <img 
+                    src="https://tse4.mm.bing.net/th?id=OIP.pmZ5JuT1q0wRVyYSgUYVXgHaHa&w=474&h=474&c=7" 
+                    alt="Nuansa Lebaran Pink" 
+                    style="max-width: 100%; height: auto; border-radius: 10px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+              <p>Silakan jelajahi menu untuk melihat halaman lainnya.</p>
+                
+            </section>
+            
+            <section id="about" class="content-section">
+                <h1>Galeri Lebaran Mini.</h1>
+                <img src="1.jpg" >
+                <img src="2.jpg" >
+                <img src= "3.jpg">
+                <img src= "5.jpg">
+            </section>
+
+            <section id="contact" class="content-section">
+                <h1>Berbagi THR 🎁</h1>
+                <p>Mari sebarkan kebahagiaan di momen yang penuh berkah! Anda dapat mengirimkan THR melalui metode berikut:</p>
+        
+                <h2>Transfer Bank</h2>
+                <p>Bank BRI: <strong>547001013401508</strong> (Sari Angraini)</p>
+        
+                <h2>E-Wallet</h2>
+                <p>DANA: <strong>089623085452</strong></p>
+                <img src="https://thumbs.dreamstime.com/b/thank-you-indonesian-language-hanging-words-vector-colourful-words-vector-terima-kasih-vector-thank-you-indonesian-language-130878218.jpg?w=576">
+            </section>
+
+            
+           
+    
+
+    <footer class="footer">
+        <p>Desain by Sari Angraini</p>
+    </footer>
+
+    <script>
+        function showContent(sectionId) {
+            let sections = document.querySelectorAll('.content-section');
+            sections.forEach(section => section.style.display = 'none');
+            document.getElementById(sectionId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
